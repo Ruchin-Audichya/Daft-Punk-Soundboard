@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Soundboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.js" defer></script>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-          <div class="head-wrapper">
-            <img class="heads left-head" src="images/left-head.png" alt="Left head">
-          </div>
-          <img src="images/daft-punk-logo.png" alt="Daft Punk logo">
-          <div class="head-wrapper">
-            <img class="heads right-head" src="images/right-head.png" alt="Right head">
-          </div>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4">
+        <div class="header text-center mb-4">
+            <div class="head-wrapper inline-block">
+                <img class="heads left-head" src="images/left-head.png" alt="Left head">
+            </div>
+            <img src="images/daft-punk-logo.png" alt="Daft Punk logo" class="inline-block">
+            <div class="head-wrapper inline-block">
+                <img class="heads right-head" src="images/right-head.png" alt="Right head">
+            </div>
         </div>
 
-        <!-- 4x4 Button Grid Container -->
-        <div id="soundboard" class="grid-container"> <!-- Single grid container for all buttons -->
-          <div class="button">
-            <p>Make It</p>
-            <audio src="sounds/make_it.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Work It</p>
-            <audio src="sounds/work_it.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Do It</p>
-            <audio src="sounds/do_it.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Makes Us</p>
-            <audio src="sounds/makes_us.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Harder</p>
-            <audio src="sounds/harder.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Better</p>
-            <audio src="sounds/better.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Faster</p>
-            <audio src="sounds/faster.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Stronger</p>
-            <audio src="sounds/stronger.wav"></audio>
-          </div>
-          <div class="button">
-            <p>More Than</p>
-            <audio src="sounds/more_than.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Hour</p>
-            <audio src="sounds/hour.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Never</p>
-            <audio src="sounds/never.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Ever</p>
-            <audio src="sounds/ever.wav"></audio>
-          </div>
-          <div class="button">
-            <p>After</p>
-            <audio src="sounds/after.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Work Is</p>
-            <audio src="sounds/work_is.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Makes Us</p>
-            <audio src="sounds/makes_us.wav"></audio>
-          </div>
-          <div class="button">
-            <p>Over</p>
-            <audio src="sounds/over.wav"></audio>
-          </div>
+        <!-- Soundboard Grid Container -->
+        <div id="soundboard" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <!-- Audio elements with preload attribute -->
+            <div class="button">
+                <p>Make It</p>
+                <audio src="sounds/make_it.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Work It</p>
+                <audio src="sounds/work_it.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Do It</p>
+                <audio src="sounds/do_it.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Makes Us</p>
+                <audio src="sounds/makes_us.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Harder</p>
+                <audio src="sounds/harder.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Better</p>
+                <audio src="sounds/better.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Faster</p>
+                <audio src="sounds/faster.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Stronger</p>
+                <audio src="sounds/stronger.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>More Than</p>
+                <audio src="sounds/more_than.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Hour</p>
+                <audio src="sounds/hour.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Never</p>
+                <audio src="sounds/never.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Ever</p>
+                <audio src="sounds/ever.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>After</p>
+                <audio src="sounds/after.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Work Is</p>
+                <audio src="sounds/work_is.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Makes Us</p>
+                <audio src="sounds/makes_us.wav" preload="auto"></audio>
+            </div>
+            <div class="button">
+                <p>Over</p>
+                <audio src="sounds/over.wav" preload="auto"></audio>
+            </div>
         </div>
     </div>
 
-    <footer class="bg-gray-800 text-white w-full text-center py-4">
-        <p>By Ruchin! — <a href="https://twitter.com/Ruchin268" class="text-red-400 hover:underline">@ruchin</a></p>
-        <p>Source Code —: <a href="https://example.com" class="text-pink-400 hover:underline">Source code</a></p>
+    <footer class="bg-gray-800 text-white w-full text-center py-4 mt-4">
+        <p>By Ruchin! — <a href="https://twitter.com/Ruchin268" class="text-red-400 hover:underline">@RUCHINXO</a></p>
+        <p><a href="https://github.com/Ruchin-Audichya/Daft-Punk-Soundboard" class="text-pink-400 hover:underline">Source code</a></p>
+        <p><a href="https://www.linkedin.com/in/ruchinau/" class="text-purple-400 hover:underline">CONNECT HERE</a></p>
     </footer>
 </body>
 </html>
