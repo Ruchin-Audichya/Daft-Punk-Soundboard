@@ -1,4 +1,4 @@
-# Futuristic Soundboard
+# DAFTPUNK Soundboard
 
 Welcome to the **Futuristic Soundboard**, a fun and interactive soundboard inspired by the iconic music of Daft Punk! This project features a grid of buttons that play various sound clips, allowing users to create their own unique sound combinations.
 
