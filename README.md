@@ -1,20 +1,47 @@
-# Dark Punk Soundboard 🎶
+# Futuristic Soundboard
 
-Unleash your inner DJ with this interactive soundboard inspired by the iconic Daft Punk sound. Featuring classic sound bites and a sleek, futuristic interface, this project is built with HTML, CSS (Tailwind), and JavaScript. Tap into nostalgia and make your parties unforgettable!
+Welcome to the **Futuristic Soundboard**, a fun and interactive soundboard inspired by the iconic music of Daft Punk! This project features a grid of buttons that play various sound clips, allowing users to create their own unique sound combinations.
 
 ## Features
-- **Interactive Sound Buttons:** Play iconic Daft Punk sounds with just a click or keyboard shortcut.
-- **Colorful Background Effects:** Enjoy a vibrant visual experience with smooth background color transitions.
-- **Responsive Design:** Looks great on all devices.
 
-## How to Use
-1. Clone the repository.
-2. Open `index.html` in your browser.
-3. Hit the buttons or use the keyboard shortcuts to enjoy the sounds!
+- **Audio Playback**: Each button plays a distinct sound when clicked, with audio preloading for seamless playback.
+- **Responsive Design**: The soundboard is optimized for mobile devices, ensuring a smooth user experience across various screen sizes.
+- **Stylish Interface**: Built using [Tailwind CSS](https://tailwindcss.com/), the soundboard has a modern and appealing look.
 
 ## Getting Started
-Clone this repo and run it locally to start jamming! 🎧
+
+To get a local copy up and running, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Ruchin-Audichya/Daft-Punk-Soundboard.git
+   cd Daft-Punk-Soundboard
+   ```
+
+2. **Open the Project**: Open the `index.html` file in your preferred web browser.
+
+## Usage
+
+- Click on the buttons to play sounds.
+- Mix and match sounds to create your own Daft Punk-inspired audio experience.
+
+## Technologies Used
+
+- HTML
+- CSS (Tailwind CSS)
+- JavaScript
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-👤 [Ruchin.us](https://twitter.com/Ruchin268)
 
+Ruchin Audichya
+- [Twitter](https://twitter.com/Ruchin268)
+- [LinkedIn](https://www.linkedin.com/in/ruchinau/)
+- [GitHub](https://github.com/Ruchin-Audichya)
