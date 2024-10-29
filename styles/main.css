@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up the full viewport height */
+    background-color: #000; /* Black background */
+    color: white;
+    font-family: 'VT323', monospace;
+    transition: background-color 0.1s ease; /* Smooth transition for background color flash */
+}
+
+.container {
+    flex: 1; /* Ensures the main content takes up available space */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling for centered logo with left and right images */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header img {
+    height: 100px;
+    margin: 0 20px;
+}
+
+.head-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heads {
+    display: none;
+    transition: ease-in-out 0.3s;
+}
+
+/* Button styling */
+.button {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, background-color 0.3s ease; /* Smooth color reset */
+    color: white;
+    height: 110px; /* Fixed height for square buttons */
+    width: 110px; /* Fixed width for square buttons */
+    background: transparent;
+    border: 2px solid #9f7fea; /* Purple border */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    display: flex; /* Center text */
+    justify-content: center; /* Center text */
+    align-items: center; /* Center text */
+    margin: auto; /* Center the button in the grid */
+    z-index: 1; /* Ensure button text is above the glow effect */
+    box-shadow: 0 0 10px #9f7fea, 0 0 20px #9f7fea, 0 0 30px #9f7fea; /* Neon glow */
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Match button's border-radius */
+    background: linear-gradient(45deg, rgba(255, 105, 180, 0.2), rgba(0, 0, 255, 0.5));
+    z-index: -1;
+    filter: blur(5px);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.button:hover:before {
+    opacity: 1; /* Show glow on hover */
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* Add animation when button is clicked */
+.clicked {
+    background-color: #fff;
+    color: #000;
+    animation: shake 0.3s ease, revertColor 0.3s ease forwards; /* Revert color after shake */
+}
+
+/* Keyframe to reset color back to original after animation */
+@keyframes revertColor {
+    to {
+        background-color: transparent;
+        color: white;
+    }
+}
+
+/* Grid container for buttons */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between buttons */
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Pushes footer to bottom */
+    width: 100%;
+    box-shadow: 0 -1px 10px #9f7fea;
+}
+
+footer a {
+    color: #9f7fea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
